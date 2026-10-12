@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Exercise 02 - Form</title>
+  </head>
+  <body>
+    <main>
+      <h1>Roth IRA Calculator</h1>
+      <label for="Balance">Balance ($)</label><br>
+      <input 
+        type="number"
+        id="Balance"><br>
+        <br>
+      <label for="Annual">Annual Contribution(4)</label><br>
+      <input
+        type="number"
+        id="Annual"><br><br>
+      <label>Maximize Contributions?</label> <br>
+      <label>
+        <input type="radio" name="maximize" value="yes">
+        Yes
+      </label>
+      <label>
+        <input type="radio" id="No" name="no">
+        No
+      </label> <br><br>
+
+      <label for="return"> Expected rate of return(5) </label><br>
+      <input type="number" min="0" max="15" step="1"><br><br>
+
+      <label for="age"> Current Age </label><br>
+      <input type="number" min="0" max="65" step="1"><br><br>
+
+      <label for="Retirement"> Retirement age </label><br>
+      <input type="number" min="55" max="75" step="1"><br><br>
+
+      <label for="marginaltaxrate"> Marginal tax rate (%) </label><br>
+      <input type="number" min="0" max="100" step="5"><br><br>
+
+      <input type="submit" name="Calculate"/>
+      <input type="reset" name="Reset"/>
+    </main>
+  </body>
+</html>
